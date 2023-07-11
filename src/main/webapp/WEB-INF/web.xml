@@ -19,4 +19,14 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Inicio</display-name>
+    <servlet-name>Inicio</servlet-name>
+    <servlet-class>servlets.Inicio</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Inicio</servlet-name>
+    <url-pattern>/Inicio</url-pattern>
+  </servlet-mapping>
 </web-app>
