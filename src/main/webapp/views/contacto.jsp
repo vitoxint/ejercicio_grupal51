@@ -35,7 +35,7 @@
 				          </a>
 				          <ul class="dropdown-menu">
 				            <li><a class="dropdown-item" href="#">Listado Capacitación</a></li>
-				            <li><a class="dropdown-item" href="#">Crear Capacitación</a></li>
+				            <li><a class="dropdown-item" href="/ejercicio_grupal51/CrearCapacitacion">Crear Capacitación</a></li>
 				            
 				          </ul>
 				        </li>
