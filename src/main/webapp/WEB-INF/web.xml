@@ -29,4 +29,14 @@
     <servlet-name>Inicio</servlet-name>
     <url-pattern>/Inicio</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ContactoServlet</display-name>
+    <servlet-name>ContactoServlet</servlet-name>
+    <servlet-class>servlets.ContactoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContactoServlet</servlet-name>
+    <url-pattern>/ContactoServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
