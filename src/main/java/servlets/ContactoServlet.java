@@ -36,7 +36,7 @@ public class ContactoServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		String nombre = request.getParameter("nombre");
-		request.setAttribute("nombre", nombre + " tu formulario ya ha sido enviado , nos contactaremos a la brevedad" );
+		request.setAttribute("respuesta", nombre + " tu formulario ya ha sido enviado , nos contactaremos a la brevedad" );
 		RequestDispatcher rd = request.getRequestDispatcher("/views/contacto.jsp" );
 		rd.forward(request, response);
 	}

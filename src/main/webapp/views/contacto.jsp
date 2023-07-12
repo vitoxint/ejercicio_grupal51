@@ -74,11 +74,11 @@
 				            Escribe tu consulta <br><br>
 				            <textarea name="descripcion" rows="8" cols="80"></textarea>
 				            <p align="center">
-				            	<button type="submit">Enviar </button>
+				            	<button class="btn btn-primary btn-sm" type="submit">Enviar </button>
 			            	</p>
 					   </form>
-					   <br/><br/>
-					   <h5> ${ respuesta }</h5>
+					   <br/>
+					    <p align="center"> ${ respuesta }</p>
 				    </p>
 			   </section>
 			   <section>
