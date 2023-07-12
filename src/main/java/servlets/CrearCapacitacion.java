@@ -29,6 +29,7 @@ public class CrearCapacitacion extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		request.setAttribute("seccion","capacitacion" );
 		getServletContext().getRequestDispatcher("/views/capacitacion_crear.jsp").forward(request , response);
 	}
 
