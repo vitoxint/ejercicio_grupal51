@@ -14,7 +14,7 @@
 		<div class="container">
 		
 			<header>
-				<nav class="navbar navbar-expand-lg bg-body-tertiary">
+				<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
 				  <div class="container-fluid">
 				    <a class="navbar-brand" href="#">GRUPO 3</a>
 				    

@@ -1,11 +1,14 @@
 package servlets;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
+
+import Model.Capacitacion;
 
 /**
  * Servlet implementation class CrearCapacitacion
@@ -34,7 +37,23 @@ public class CrearCapacitacion extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+
+		int numCapacitacion = Integer.parseInt(request.getParameter("numCapacitacion")) ;
+	    String rutCliente = request.getParameter("rutCliente");
+	    String diaSemana = request.getParameter("diaSemana");
+	    String hora = request.getParameter("hora");
+	    String lugar = request.getParameter("lugar");
+	    String duracion = request.getParameter("duracion");
+	    int cantAsistentes = Integer.parseInt(request.getParameter("cantAsistentes"));
+		
+		Capacitacion cap = new Capacitacion( numCapacitacion,  rutCliente,  diaSemana,  hora,  lugar,  duracion,  cantAsistentes );
+		
+		request.setAttribute("respuesta", cap.mostrarDetalle() );
+		RequestDispatcher rd = request.getRequestDispatcher("/views/capacitacion_crear.jsp" );
+		rd.forward(request, response);
+		
+		
+		
 	}
 
 }
