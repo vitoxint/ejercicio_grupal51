@@ -1,5 +1,6 @@
 package servlets;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -34,7 +35,10 @@ public class ContactoServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		String nombre = request.getParameter("nombre");
+		request.setAttribute("nombre", nombre + " tu formulario ya ha sido enviado , nos contactaremos a la brevedad" );
+		RequestDispatcher rd = request.getRequestDispatcher("/views/contacto.jsp" );
+		rd.forward(request, response);
 	}
 
 }
