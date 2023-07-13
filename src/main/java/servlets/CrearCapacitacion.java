@@ -49,6 +49,7 @@ public class CrearCapacitacion extends HttpServlet {
 		
 		Capacitacion cap = new Capacitacion( numCapacitacion,  rutCliente,  diaSemana,  hora,  lugar,  duracion,  cantAsistentes );
 		
+		request.setAttribute("seccion","capacitacion" );
 		request.setAttribute("respuesta", cap.mostrarDetalle() );
 		RequestDispatcher rd = request.getRequestDispatcher("/views/capacitacion_crear.jsp" );
 		rd.forward(request, response);
