@@ -29,7 +29,7 @@
 				    
 				    
 				    
-				    	<form action="/ejercicio_grupal51/ContactoServlet" method="post">
+				    	<form action="/ejercicio_grupal51/ContactoServlet" method="post" id="contacto">
 					    <p align="center">
 					    
 					        Escribe tu nombre <br><br>
@@ -45,31 +45,21 @@
 			            	</p>
 					   </form>
 					   <br/>
-					    <p align="center"> ${ respuesta }</p>
+					   <div class="alert alert-success position-fixed top-0 end-0" role="alert" id="envio-exitoso" style="display: none;">
+					   <p align="center"> ${ respuesta }</p>				   
+					   </div>		    
 				   
 			   </section>
 			   <section>
-					<p align="center"> Nuestra oficina se encuentra en <b> AV. GRECIA N°2538, ÑUÑOA, SANTIAGO</b></p><br>
-					
+					<p align="center"> Nuestra oficina se encuentra en <b> AV. GRECIA N°2538, ÑUÑOA, SANTIAGO</b></p><br>				
 			
 				</section>
 				
-				
-				
-				
-			
-			
-		
-		
-		</div>
-	
+			</div>
 	
 		<%@include file="/views/layout/footer.jsp" %>
 	
-	
-	
-	
-	
+		<script type="text/javascript" src="${pageContext.request.contextPath}/scripts/alertaFormulario.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 	</body>
